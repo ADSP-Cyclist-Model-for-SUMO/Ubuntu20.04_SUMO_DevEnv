@@ -1,0 +1,8 @@
+.vagrant/
+transfer/
+
+*.log
+
+.DS_Store
+.vscode/
+.idea/
