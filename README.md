@@ -11,6 +11,10 @@ This project is based on https://github.com/arnemertz/Xubuntu1604_DevBox and htt
 ### VirtualBox
 Download and install Oracle VirtualBox from https://www.virtualbox.org/
 
+#### Windows-only
+
+Make sure to turn off all Windows features related to virtualization
+
 ### Vagrant
 Download and install Vagrant from https://www.vagrantup.com/
 
