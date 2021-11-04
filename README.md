@@ -15,7 +15,7 @@ Download and install Oracle VirtualBox from https://www.virtualbox.org/
 Download and install Vagrant from https://www.vagrantup.com/
 
 ### Dowload the SUMO source code
-Clone the repository containing the SUMO code you want to build (e.g. from https://github.com/eclipse/sumo) into a directory named `sumo` on the same level as this directory.  
+Clone the repository containing the SUMO code you want to build (e.g. from https://github.com/ADSP-Cyclist-Model-for-SUMO/sumo) into a directory named `sumo` on the same level as this directory.  
 That means the source code is expected to be located at `../sumo` in relation to this directory.
 
 ### Create and provision the VM
