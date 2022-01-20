@@ -51,13 +51,23 @@ Now you can run `./bin/sumo`, `./bin/sumo-gui`, `./bin/netedit`, etc. to run the
 To develop for SUMO you can now install the IDE or Editor of your choice directly inside the VM and work from there. Alternatively you can use an IDE with remote SSH capabilities such as VSCode or CLion running on your host system and connect it to the VM.
 
 ### CLion remote config
-A guide for configuring CLion can be found here: https://github.com/mdklatt/clion-remote/tree/2021.2 (You can find out the location of the SSH private key for the by running `vagrant ssh-config`).
+A guide for configuring CLion can be found here: https://github.com/mdklatt/clion-remote/tree/2021.2
+
+* The SSH port is probably set to `2222`
+* You can find out the location of the SSH private key by running `vagrant ssh-config`
+* In the Deployment settings, choose type `Local or mounted folder` and reflect your folder mounting in the `Mappings` tab. `Local path` is the local path on your host machine, `Deployment path` should be `/sumo`
+
+### Performance issues
+If permance issues (while building) occur, this is most probably caused by the synced folder...
+* https://stackoverflow.com/questions/34729859/slow-vagrant-box-how-to-improve-this
+* https://blog.theodo.com/2017/07/speed-vagrant-synced-folders/
+* https://github.com/rdsubhas/vagrant-faster
+
 
 ## Additional tools
 The development environment configured here, may or should be extended by the following tools:
 
 * IDE / Code editor (e.g. CLion, VSCode, Sublime Text, ...)
-* Debugger (GDB)
 * Different compiler (Clang)
 * Package manger (Conan)
 * a better terminal setup

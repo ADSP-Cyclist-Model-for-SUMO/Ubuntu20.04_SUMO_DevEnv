@@ -30,6 +30,12 @@ sudo apt-get -y install cmake
 
 
 echo -----------------------------------
+echo INSTALL GDB
+echo -----------------------------------
+sudo apt-get -y install gdb
+
+
+echo -----------------------------------
 echo INSTALL DEPENDENCIES
 echo -----------------------------------
 sudo apt-get -y install libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev

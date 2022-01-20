@@ -54,7 +54,7 @@ Vagrant.configure(2) do |config|
 	# customizations, below, to suit the needs/limits of your local machine.
 	#
 	# For a 64-bit VM (courtesy of https://gist.github.com/mikekunze/7486548#file-ubuntu-desktop-vagrantfile)
-	vb.customize ["modifyvm", :id, "--memory", "4096"]
+	vb.customize ["modifyvm", :id, "--memory", "8192"]
     # Set the number of virtual CPUs for the virtual machine
 	vb.customize ["modifyvm", :id, "--cpus", "4"]
     # Set the graphicscontroller and amount of Video RAM
