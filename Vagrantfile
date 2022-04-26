@@ -90,6 +90,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.synced_folder "../sumo/", "/sumo", create: true
+  config.vm.synced_folder "../../data_analytics/adsp/parameter_evaluation", "/parameter_evaluation", create: true
 
   config.vm.define "SUMO_Dev"
 
